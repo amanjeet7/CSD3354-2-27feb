@@ -10,6 +10,9 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            var orderProcessor = new orderProcessor();
+            var order = new order { DataPlaced = DateTime.Now, Totalprice = 100f };
+            orderProcessor.Process(order);
         }
     }
 }
